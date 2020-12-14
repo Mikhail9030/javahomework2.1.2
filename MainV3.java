@@ -3,13 +3,13 @@ public class MainV3 {
         boolean registered = true;
         int percent;
         if (registered) {
-            percent = 100;
+            percent = 10;
         } else {
             percent = 0;
         }
         int amount = 1100;
         int balance = 100;
-        int bonus = amount * percent / 100 / 100;
+        int bonus = balance + amount * percent / 100 / 100;
         if (amount > balance) {
             balance = bonus;
         }
